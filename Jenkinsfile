@@ -11,7 +11,7 @@ script {
 try {
 timeout(time: 20, unit: 'SECONDS') {
 
-checkout([$class: 'GitSCM', branches: [[name: '*/']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '10e71e557ac1a09b7789c451c666d264b38b3c33', url: 'https://github.com/Amanjain1612/intellimeet-CICD.git']]])
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '10e71e557ac1a09b7789c451c666d264b38b3c33', url: 'https://github.com/Amanjain1612/intellimeet-CICD.git']]])
 
  	  }
 
